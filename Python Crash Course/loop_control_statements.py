@@ -16,7 +16,6 @@ for j in range(1,11):
     if j >=4 and j<=7:
         continue;
     print(j)
-    j+=1
     
 
 # Pass
