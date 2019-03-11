@@ -39,6 +39,7 @@ print(list1)
 del list1[2]
 print(list1)
 
+<<<<<<< HEAD
 print()
 
 #List length
@@ -55,3 +56,13 @@ print()
     
 for item in list1:
     print(item)    
+=======
+for index in range(0,len(list1)):
+    print(list1[index], end=",")
+    
+print()
+print()
+    
+for item in list1:
+    print(item)
+>>>>>>> f284e7678be47171f81172b6382c64cf93a99a24
