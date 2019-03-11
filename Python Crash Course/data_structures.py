@@ -32,3 +32,12 @@ print(list1)
 
 del list1[2]
 print(list1)
+
+for index in range(0,len(list1)):
+    print(list1[index], end=",")
+    
+print()
+print()
+    
+for item in list1:
+    print(item)

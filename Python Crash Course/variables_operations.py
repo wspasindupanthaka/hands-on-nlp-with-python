@@ -21,5 +21,7 @@ sen = "I love Sri Lanka\n"
 print(sen*num1)
 
 
+# by default python string printing is ended with new line character, in here we specify the end line character as a
+#space
 print("Hello",end=" ")
-print("Wolrd")
+print("World")
