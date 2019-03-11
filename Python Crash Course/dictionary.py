@@ -20,3 +20,28 @@ print(dict1['list'])
 print()
 # The difference here is, if the key is not there the specified default value is printed 
 print(dict1.get("apple1",'Key not exists'))
+
+
+#To delete
+del dict1['apple']
+
+print(len(dict1))
+
+print()
+
+#Get keylist
+listOfKeys = list(dict1.keys())
+print(listOfKeys)
+
+#Get values list
+listOfValues = list(dict1.values())
+print(listOfValues)
+
+
+#Iterating
+
+print()
+
+for key in dict1.keys():
+    print(dict1[key])
+
