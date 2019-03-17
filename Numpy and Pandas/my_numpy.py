@@ -75,3 +75,20 @@ new_rarr=np.reshape(rarr,(12,))
 new_rarr=np.reshape(rarr,(12,1))
 
 rarr = np.random.random((4,5))
+
+#matrix slicing
+
+#first colon is for rows and next is for colmnns, in here all rows and columns
+rarr[:,:]
+
+#start from 2nd row and end from 3rd row and include all columns
+rarr[1:3,:]
+
+#include 1st row and 4th row
+rarr[[0,3],:]
+
+#excluding last row
+rarr[:-1,:]
+
+#including the last row
+rarr[:-1,:]
