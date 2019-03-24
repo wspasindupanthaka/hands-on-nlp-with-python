@@ -77,3 +77,19 @@ for word in freq_words:
                 frequency+=1
         tf_word=frequency/len(nltk.word_tokenize(sentence))
         word_tf.append(tf_word)
+    word_tfs[word]=word_tf
+    
+#TF-IDF calculation
+tf_idf_matrix=[]
+
+for word in word_tfs.keys():
+    tf_idf=[]
+    for value in word_tfs[word]:
+        score = value*word_idfs[word]
+        tf_idf.append(score)
+    tf_idf_matrix.append(tf_idf)
+  
+#converting to 2d array
+x = np.asarray(tf_idf_matrix)
+
+x = np.transpose(x)
