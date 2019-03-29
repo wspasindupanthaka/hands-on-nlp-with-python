@@ -65,7 +65,6 @@ from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer(max_features=2000,min_df=3,max_df=0.6,stop_words=stopwords.words('english'))
 X = vectorizer.fit_transform(corpus).toarray()
 
-
 #Creating TF-IDF model from BOW model
 from sklearn.feature_extraction.text import TfidfTransformer
 transformer = TfidfTransformer()
@@ -77,7 +76,7 @@ X = transformer.fit_transform(X).toarray()
 #Directly create the TF-IDF vectorizer because when we save this model we want to save this vecto also.
 #With the above approach we need to save the both transformer and vectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-#CountVectorizer class creates the BOW model for us at this time
+#TfidfVectorizer class creates the TF-IDF model for us at this time
 vectorizer = TfidfVectorizer(max_features=2000,min_df=3,max_df=0.6,stop_words=stopwords.words('english'))
 X = vectorizer.fit_transform(corpus).toarray()
 #fit_transform(corpus) build the vectorizer based on the corpus

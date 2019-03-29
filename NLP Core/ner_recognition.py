@@ -5,7 +5,7 @@ nltk.download('words')
 
 #named entities - 
 
-paragraph = 'The Taj Mahal was built by emperor Shah Jahan who was born Galle'
+paragraph = 'The Taj Mahal was built by emperor Shah Jahan who was born Galle who knows Java'
 
 words = nltk.word_tokenize(paragraph)
 
